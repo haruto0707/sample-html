@@ -104,6 +104,12 @@ img {
     font-weight: bold;
     margin-top: 90px;
 }
+nav.floating{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    background-color: #d0d0d0;
+}
 @media (max-width: 800px){
     .site-menu ul{
         display: block;
@@ -138,5 +144,32 @@ img {
     }
     .copyright{
         margin-top: 50px;
+    }
+    .header-site-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        color: #ffffff;
+        background-color: #736e62;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        display: none;
+    }
+    .header-site-menu.is-show{
+        display: block;
+    }
+    .toggle-menu-button{
+        display: block;
+        width: 44px;
+        height: 34px;
+        background-image: url(../images/common/icon-menu.png);
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        outline: none;
     }
 }
